@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@font-face {font-family: "Geom Graphic"; src: url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.eot"); src: url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.woff") format("woff"), url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.svg#Geom Graphic") format("svg"); } 
+
+:root{
+    --azul-primario:#1C204A;
+    --azul-secundario:#24315E;
+    --blanco-primario:#FBFBFB;
+    --blanco-secundario:#FFFFFF;
+    --color-boton:#295FA6;
+    --color-enlace:#5CD1FA;
+    --div-height:58px;
+}
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background: var(--azul-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    width: 100%;
+    height: calc(100vh - 7.25rem);
+    display: flex;
+    flex-flow: row nowrap;
+    background: var(--azul-secundario);
+    --margen:9.0625%;
+    margin: calc(var(--margen)/2);
+}
+
+.contenedor .panel-izq{
+    background: url(/imagenes/Chef-en-Australia.jpg) center center no-repeat;
+    background-size:cover;
+    width: 50%;
+    
+}
+
+.contenedor .panel-izq .contenido{
+    background: rgba(36, 49, 94, 72%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 7.25rem);
+}
+
+.contenedor .panel-der{
+    display: flex;
+    justify-content:center;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 50%;
+}
+
+.contenedor #imagenlogo{
+    width: 11rem;
+    margin-top: 5rem;
+}
+
+.contenedor h1{
+    font-family: "Geom Graphic";
+    font-size: 3.5rem;
+    margin-top: .6875rem;
+}
+
+.contenedor .titulo{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    margin-top: 4rem;
+    margin-left:2.625rem;
+    margin-right:2.625rem ;
+}
+
+.contenedor .redes-sociales{
+    text-decoration: none;
+    margin-top: 6rem;
+    font-size: 3.5em;
+    margin-bottom: 0;
+}
+
+.contenedor .redes-sociales a:link,.contenedor .redes-sociales a:visited{
+    color: var(--blanco-secundario);
+}
+
+.contenedor .redes-sociales .bxl-facebook-square:hover{
+    background:#3b5998;
+}
+.contenedor .redes-sociales .bxl-youtube:hover{
+    background:#c4302b;
+}
+.contenedor .redes-sociales .bxl-twitter:hover{
+    background:#00acee;
+}
+
+
+
+.contenedor .panel-der form h1{
+    margin-bottom: 1.3125rem;
+    font-size: 3em;
+}
+
+.contenedor .panel-der form{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 8.375rem;
+}
+
+.contenedor .panel-der form label{
+    font-size: 1.5rem;
+}
+
+.contenedor .panel-der form label:not(#excluido){
+    margin-top: 1.25rem;
+}
+
+.contenedor .panel-der form input[type="submit"]{
+    margin-top: 1rem;
+    margin-bottom: .825rem;
+    width: 100%;
+    color:var(--blanco-secundario);
+    font-size: 2rem;
+    background:var(--color-boton);
+    border:none;
+}
+
+.contenedor .panel-der form input[type="submit"]:hover{
+    cursor:pointer;
+    background:#348abb;
+}
+
+.contenedor .panel-der form .boton{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+.contenedor .panel-der form p {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:var(--blanco-secundario);
+    text-align: center;
+}
+
+.contenedor .panel-der form p a{
+    text-decoration: none;
+    color:var(--color-enlace);
+    text-align: center;
+}
+
+/* .contenedor .panel-der form input[type="text"],
+.contenedor .panel-der form input[type="password"]
+{
+    font-size:18px ;
+} */
+/* .contenedor .panel-der form i{
+    margin-top: 0.5rem;
+    font-size: 2.2rem;
+} */
+
+
+
+
+
+
