@@ -18,67 +18,67 @@
     <div class="contenedor">
         <div class="panel-der">
             <button id="bdark">
-                
+
             </button>
-            
-            <h2>Registro de Estudiante</h2>            
+
+            <h2>Registro de Estudiante</h2>
             <form action="" method="post">
-            <!-- <img src="../img/profile.png" alt="profile.png" width="150px"> -->
+                <!-- <img src="../img/profile.png" alt="profile.png" width="150px"> -->
                 <div class="registro">
                     <label for="nombre">Nombres:</label>
                     <input type="text" name="nombre" id="nombre" class="cajatexto" placeholder="nombres">
-                    
+
                 </div>
                 <div class="registro">
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" name="apellidos" id="apellidos" class="cajatexto" placeholder="apellidos">
                 </div>
-               <div class="registro">
+                <div class="registro">
                     <label for="dni">Dni:</label>
                     <input type="text" name="dni" id="dni" class="cajatexto" placeholder="dni">
-               </div>
-               <div class="registro">
-                <div class="cajapeq">
-                    <span>
-                        <label for="fechanac">Fecha de nacimiento:</label>
-                        <input type="date" name="fechanac" id="fechanac" class="cajatexto"></span>
-                    <span>
-                        <label for="edad">Edad:</label>
-                    <input type="number" name="edad" id="edad" class="cajatexto" size="5px" placeholder="su edad">
-                    </span>
-                    <span>
-                        <label for="sexo">Sexo:</label> 
-                        <select name="sexo" id="sexo">
-                            <option disabled selected>Selecciona</option>
-                            <option value="1">Varón</option>
-                            <option value="0">Mujer</option>
-                        </select>
-                    </span>                  
                 </div>
-               </div>
-               <div class="registro">
-                <label for="correo">Correo:</label>
-                <input type="email" name="correo" id="correo" class="cajatexto" placeholder="example@gmail.com">
-               </div>
-               <div class="registro">
-                <label for="contrasenia">Contraseña:</label>
-                <input type="password" name="contrasenia" id="contrasenia" class="cajatexto" placeholder="contraseña">
-               </div>
-               <div class="registro">
-                <label for="contraseniare">Repita la Contraseña:</label>
-                <input type="password" name="contraseniare" id="contraseniare" class="cajatexto" placeholder="contraseña">
-               </div>
+                <div class="registro">
+                    <div class="cajapeq">
+                        <span>
+                            <label for="fechanac">Fecha de nacimiento:</label>
+                            <input type="date" name="fechanac" id="fechanac" class="cajatexto"></span>
+                        <span>
+                            <label for="edad">Edad:</label>
+                            <input type="number" name="edad" id="edad" class="cajatexto" size="5px" placeholder="su edad">
+                        </span>
+                        <span>
+                            <label for="sexo">Sexo:</label>
+                            <select name="sexo" id="sexo">
+                                <option disabled selected>Selecciona</option>
+                                <option value="1">Varón</option>
+                                <option value="0">Mujer</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div class="registro">
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="correo" id="correo" class="cajatexto" placeholder="example@gmail.com">
+                </div>
+                <div class="registro">
+                    <label for="contrasenia">Contraseña:</label>
+                    <input type="password" name="contrasenia" id="contrasenia" class="cajatexto" placeholder="contraseña">
+                </div>
+                <div class="registro">
+                    <label for="contraseniare">Repita la Contraseña:</label>
+                    <input type="password" name="contraseniare" id="contraseniare" class="cajatexto" placeholder="contraseña">
+                </div>
                 <div class="boton">
                     <input type="submit" value="Registrarse">
                     <p>ó</p>
-                    <p><a href="/index.php">Iniciar sesión</a></p>
+                    <p><a href="index.php">Iniciar sesión</a></p>
                 </div>
             </form>
 
         </div>
         <div class="panel-izq">
             <div class="contenido">
-                
+
                 <div id="imagenlogo">
 
                 </div>
@@ -93,7 +93,7 @@
             </div>
 
         </div>
-        
+
     </div>
 
     <script src="js/jquery.min.js"></script>

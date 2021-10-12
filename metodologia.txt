@@ -1,0 +1,30 @@
+modelo MVC modelo vista controlador
+
+DOM : el navegador de google ... 
+
+
+FUNCIONALIDAD DE LA CONEXION A LA BASE DE DATOS: 
+MODELO DE USUARIO, MODELO DE CONEXION: POO
+CLASES: ejecutar funciones, ejecutar procedimientos, 
+hacer peticiones al servidor local
+
+FRONTEND    BACKEND
+index.php->controlador(loginController.php->modelo usuario
+->modelo conexion)->vistas al cliente...
+
+MODELO USUARIO:
+-iniciar sesion
+-actualizar su foto
+-ver sus notas
+-SUBE NOTAS
+
+MODELO CONEXION:
+-acceder a la base de datos
+- hacer peticiones por consultas
+...\
+
+
+
+consultar_notas->conectarme con la base de datos
+iniciar sesion -> conectarme con la base de datos
+eliminar un usuario -> conectarme a la base de datos

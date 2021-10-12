@@ -19,7 +19,7 @@
     <div class="contenedor">
         <div class="panel-izq">
             <div class="contenido">
-                
+
                 <div id="imagenlogo">
 
                 </div>
@@ -37,17 +37,17 @@
         <div class="panel-der">
             <button id="bdark">
             </button>
-            
+
             <h2>Sistema de Gestión Académica</h2>
             <h2>EGATUR</h2>
-            
-            <form action="" method="post">
-            <h2>Bienvenido...</h2>
-            <img src="../img/profile.png" alt="profile.png" width="150px">
+
+            <form action="controlador/LoginController.php" method="post">
+                <h2>Bienvenido...</h2>
+                <img src="img/profile.png" alt="profile.png" width="150px">
                 <label for="usuario">Usuario</label>
                 <div class="field">
                     <p class="control has-icons-left has-icons-right">
-                        <input class="input is-medium cajatexto" type="email" placeholder="Usuario">
+                        <input name="usuario" class="input is-medium cajatexto" type="email" placeholder="Usuario">
                         <span class="icon is-large is-left cajaicono">
                             <i class='bx bx-user'></i>
                         </span>
@@ -59,7 +59,7 @@
                 <label for="usuario">Contraseña</label>
                 <div class="field">
                     <p class="control has-icons-left">
-                        <input class="input is-medium cajatexto" type="password" placeholder="Contraseña">
+                        <input name="password" class="input is-medium cajatexto" type="password" placeholder="Contraseña">
                         <span class="icon is-large is-left cajaicono">
                             <i class='bx bx-lock-alt'></i>
                         </span>
@@ -75,7 +75,7 @@
                 <div class="boton">
                     <input type="submit" value="iniciar sesión">
                     <p>ó</p>
-                    <p><a href="/registro.php">Registrarse</a></p>
+                    <p><a href="registro.php">Registrarse</a></p>
                 </div>
             </form>
 
