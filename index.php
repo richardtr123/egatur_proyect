@@ -1,3 +1,4 @@
+<?php include("modelo/Conexion.php") ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="estillo.css"> -->
     <!-- xd -->
@@ -18,9 +19,7 @@
     <div class="contenedor">
         <div class="panel-izq">
             <div class="contenido">
-                <button id="bdark">
-                    <p><i class='bx bx-sun'></i>/<i class='bx bx-moon'></i></p>
-                </button>
+                
                 <div id="imagenlogo">
 
                 </div>
@@ -36,12 +35,19 @@
 
         </div>
         <div class="panel-der">
+            <button id="bdark">
+            </button>
+            
+            <h2>Sistema de Gestión Académica</h2>
+            <h2>EGATUR</h2>
+            
             <form action="" method="post">
-                <h1>Bienvenido</h1>
+            <h2>Bienvenido...</h2>
+            <img src="../img/profile.png" alt="profile.png" width="150px">
                 <label for="usuario">Usuario</label>
                 <div class="field">
                     <p class="control has-icons-left has-icons-right">
-                        <input class="input is-large cajatexto" type="email" placeholder="Usuario">
+                        <input class="input is-medium cajatexto" type="email" placeholder="Usuario">
                         <span class="icon is-large is-left cajaicono">
                             <i class='bx bx-user'></i>
                         </span>
@@ -53,7 +59,7 @@
                 <label for="usuario">Contraseña</label>
                 <div class="field">
                     <p class="control has-icons-left">
-                        <input class="input is-large cajatexto" type="password" placeholder="Contraseña">
+                        <input class="input is-medium cajatexto" type="password" placeholder="Contraseña">
                         <span class="icon is-large is-left cajaicono">
                             <i class='bx bx-lock-alt'></i>
                         </span>
@@ -62,14 +68,14 @@
                 <div class="recordar">
                     <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-primary">
-                            <input type="checkbox"> Recordar mi usuario y contraseña
+                            <input type="checkbox">Recordar mi usuario y contraseña
                         </label>
                     </div>
                 </div>
                 <div class="boton">
                     <input type="submit" value="iniciar sesión">
                     <p>ó</p>
-                    <p><a href="">Registrarse</a></p>
+                    <p><a href="/registro.php">Registrarse</a></p>
                 </div>
             </form>
 
@@ -78,30 +84,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/myei/validate.js@master/validate.min.js"></script>
-    <script>
-        const bdark = document.querySelector('#bdark');
-        const body = document.querySelector('body');
-        bdark.addEventListener('click', e => {
-            body.classList.toggle('darkmode');
-        })
-
-        load();
-
-        function load() {
-            const darkmode = localStorage.getItem('darkmode');
-            if (!darkmode) {
-                store('false');
-            } else {
-                if (darkmode == 'true') {
-                    body.classList.add('darkmode');
-                }
-            }
-        }
-
-        function store(value) {
-            localStorage.setItem('darkmode', value);
-        }
-    </script>
+    <script src="js/darkmode.js"></script>
 </body>
 
 </html>
