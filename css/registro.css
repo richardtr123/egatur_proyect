@@ -1,18 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-@font-face {
-  font-family: "Geom Graphic";
-  src: url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.eot");
-  src: url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/dcd6ec2b9b1dce4fc1d8b56c504404a8.svg#Geom Graphic")
-      format("svg");
-}
+@font-face {font-family: "Geom Graphic";
+  src: url("../fonts/Geom\ Graphic\ W03\ Bold.ttf");}
 
 :root {
   --azul-primario: #1c204a;
@@ -64,39 +52,45 @@ body {
   margin: calc(var(--margen) / 2);
 }
 
-.contenedor .panel-izq {
+.contenedor .panel-der {
   background: url(../img/Chef-en-Australia.jpg) center center no-repeat;
   background-size: cover;
   width: 50%;
 }
 
-.contenedor .panel-izq .contenido {
+.contenedor .panel-der .cabecera{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.contenedor .panel-der .contenido {
   /* background: rgba(36, 49, 94, 72%); */
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content:space-between;
   align-items: center;
+  padding: 30px;
   width: 100%;
-  height: calc(100vh - 116px);
+  height: 100%;
 }
 
-.contenedor .panel-izq #imagenlogo {
+.contenedor .panel-der #imagenlogo {
   background: url(../img/logo-tema-claro.png) no-repeat center;
-  background-size: 176px;
-  width: 176px;
-  height: 176px;
-  margin-top: 80px;
+  background-size: contain;
+  width: 180px;
+  height: 180px;
+  
 }
 
-
-
-.contenedor .panel-der {
+.contenedor .panel-izq {
   display: flex;
   position: relative;
- 
   flex-flow: column nowrap;
   align-items: center;
   width: 50%;
+  overflow-y: auto;
 }
 
 .contenedor #bdark {
@@ -112,10 +106,9 @@ body {
   position: absolute;
 }
 
-.contenedor .panel-izq h1 {
+.contenedor .panel-der h1 {
   font-family: "Geom Graphic";
-  font-size: 56px;
-  margin-top: 11px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -123,16 +116,15 @@ body {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 24px;
-  margin-top: 64px;
-  margin-left: 42px;
-  margin-right: 42px;
+  margin: 0 42px 0 42px;
 }
 
 .contenedor .redes-sociales {
-  text-decoration: none;
-  margin-top: 96px;
-  font-size: 56px;
-  margin-bottom: 0;
+    width: 100%;
+    gap: 50px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;  
 }
 
 .contenedor .redes-sociales .bxl-facebook-square:hover {
@@ -145,44 +137,44 @@ body {
   background: #00acee;
 }
 
-.contenedor .panel-der h1 {
+.contenedor .panel-izq h1 {
   font-size: 30px;
   margin-top: 11px;
   text-align: center;
 }
 
-.contenedor .panel-der h2 {
+.contenedor .panel-izq h2 {
   font-size: 40px;
   margin-top: 11px;
   text-align: center;
 }
-.contenedor .panel-der form h2 {
+.contenedor .panel-izq form h2 {
   align-self: flex-start;
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.contenedor .panel-der form img {
+.contenedor .panel-izq form img {
   align-self: center;
 }
-.contenedor .panel-der form {
-  margin-top: 10px;
+.contenedor .panel-izq form {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   height: 100%;
   width: 100%;
   padding: 0 50px 30px 50px;
 }
 
-.contenedor .panel-der form .registro{
+.contenedor .panel-izq form .registro{
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
 }
-.contenedor .panel-der form label {
+.contenedor .panel-izq form label {
+  margin-top: 5px;
   font-size: 20px;
 }
-.contenedor .panel-der form input[type="submit"] {
+.contenedor .panel-izq form input[type="submit"] {
   margin-top: 11px;
   margin-bottom: 13.2px;
   width: 100%;
@@ -191,37 +183,37 @@ body {
   /* background:var(--color-boton); */
   border: none;
 }
-.contenedor .panel-der form input[type="submit"]:hover {
+.contenedor .panel-izq form input[type="submit"]:hover {
   cursor: pointer;
   background: #348abb;
 }
-.contenedor .panel-der form .recordar {
+.contenedor .panel-izq form .recordar {
   margin-top: 10px;
 }
-.contenedor .panel-der form input[type="checkbox"] {
+.contenedor .panel-izq form input[type="checkbox"] {
   transform: scale(1.5);
   vertical-align: middle;
   margin-bottom: 5px;
 }
 
-.contenedor .panel-der form .boton {
+.contenedor .panel-izq form .boton {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.contenedor .panel-der .cajapeq{
+.contenedor .panel-izq .cajapeq{
   display: flex;
   flex-direction: row wrap;
   justify-content: space-between;
 }
 
-.contenedor .panel-der .cajapeq span{
+.contenedor .panel-izq .cajapeq span{
   display: flex;
   flex-direction:column;
 }
 
-.contenedor .panel-der form p {
+.contenedor .panel-izq form p {
   /* margin-top: 8px; */
   text-decoration: none;
   /* font-size: 20px; */
@@ -229,11 +221,18 @@ body {
   text-align: center;
 }
 
-.contenedor .panel-der form p a {
+.contenedor .panel-izq form p a {
   margin-top: 8px;
   text-decoration: underline;
   /* color:var(--color-enlace); */
   text-align: center;
+}
+
+.contenedor .panel-izq .enlace-contrasenia{
+  text-decoration: none;
+}
+.contenedor .panel-izq .enlace-contrasenia:hover{
+  text-decoration: underline;
 }
 
 body {
@@ -248,7 +247,7 @@ body {
   background: var(--fondo-secundario);
 }
 
-.contenedor .panel-izq .contenido {
+.contenedor .panel-der .contenido {
   background: var(--color-panelizq);
 }
 
@@ -257,26 +256,26 @@ body {
   color: var(--color-letra);
 }
 
-.contenedor .panel-der form input[type="submit"] {
+.contenedor .panel-izq form input[type="submit"] {
   color: var(--blanco-primario);
   background: var(--color-boton);
 }
 
-.contenedor .panel-der form p {
+.contenedor .panel-izq form p {
   color: var(--color-letra);
 }
-.contenedor .panel-der form p a {
+.contenedor .panel-izq form p a {
   color: var(--color-enlaceclaro);
 }
 
-.contenedor .panel-der .cajaicono {
+.contenedor .panel-izq .cajaicono {
   background: rgba(4, 3, 61, 8%);
   border: hsl(0, 0%, 86%) 1px solid;
   border-right: none;
   /* border-radius: 5px; */
 }
 
-.contenedor .panel-der .cajatexto {
+.contenedor .panel-izq .cajatexto {
   padding: 5px;
   font-size: 18px;
   width: 100%;  
@@ -284,13 +283,13 @@ body {
   /* padding-right: 16px; */
 }
 
-.contenedor .panel-der .cajatexto:focus {
+.contenedor .panel-izq .cajatexto:focus {
   box-shadow: 5px 5px 10px rgba(77, 72, 72, 2%); 
 
   /* padding-right: 16px; */
 }
 
-.contenedor .panel-der #sexo {
+.contenedor .panel-izq #sexo {
   font-size: 16px;
   width: 120px;
   height: 35px;
@@ -322,21 +321,21 @@ body.darkmode {
   color: var(--blanco-primario);
 }
 
-.darkmode .contenedor .panel-izq #imagenlogo {
+.darkmode .contenedor .panel-der #imagenlogo {
   background: url(../img/logo-tema-oscuro.png) no-repeat center;
   background-size: 152px;
 }
 
-.darkmode .contenedor .panel-izq .contenido {
+.darkmode .contenedor .panel-der .contenido {
   background: rgba(36, 49, 94, 72%);
 }
 
-.darkmode .contenedor .panel-der form input[type="submit"]:hover {
+.darkmode .contenedor .panel-izq form input[type="submit"]:hover {
   cursor: pointer;
   background: #348abb;
 }
 
-.darkmode .contenedor .panel-der .cajatexto::placeholder{
+.darkmode .contenedor .panel-izq .cajatexto::placeholder{
   color:whitesmoke;
 }
 
@@ -345,29 +344,29 @@ body.darkmode {
   color: var(--blanco-primario);
 }
 
-.darkmode .contenedor .panel-der .cajatexto {
+.darkmode .contenedor .panel-izq .cajatexto {
   background: var(--color-cajatexto);
   color: rgb(233, 233, 233);
 }
 
-.darkmode .contenedor .panel-der #sexo {
+.darkmode .contenedor .panel-izq #sexo {
   background: var(--color-cajatexto);
   color: rgb(233, 233, 233);
 }
 
-.darkmode .contenedor .panel-der .cajaicono {
+.darkmode .contenedor .panel-izq .cajaicono {
   background: var(--azul-primario);
 }
 
-.darkmode .contenedor .panel-der form input[type="submit"] {
+.darkmode .contenedor .panel-izq form input[type="submit"] {
   color: var(--blanco-primario);
   background: var(--color-boton);
 }
 
-.darkmode .contenedor .panel-der form p {
+.darkmode .contenedor .panel-izq form p {
   color: var(--blanco-primario);
 }
-.darkmode .contenedor .panel-der form p a {
+.darkmode .contenedor .panel-izq form p a {
   color: var(--color-enlace);
 }
 
@@ -377,27 +376,27 @@ body.darkmode {
   background-size: 28px;
 }
 
-/* .contenedor .panel-der form input[type="text"],
-.contenedor .panel-der form input[type="password"]
+/* .contenedor .panel-izq form input[type="text"],
+.contenedor .panel-izq form input[type="password"]
 {
     font-size:18px ;
 } */
-/* .contenedor .panel-der form i{
+/* .contenedor .panel-izq form i{
     margin-top: 0.5rem;
     font-size: 2.2rem;
 } */
 /* Laptops */
 @media screen and (max-width: 1200px){
-  .contenedor .panel-der .cajatexto {
+  .contenedor .panel-izq .cajatexto {
     padding: 5px;
     font-size: 16px;  
     border: 1px solid rgb(0, 0, 0,15%);
     /* padding-right: 16px; */
   }
-  .contenedor .panel-der form label {
+  .contenedor .panel-izq form label {
     font-size: 18px;
   }
-  .contenedor .panel-der .cajapeq{
+  .contenedor .panel-izq .cajapeq{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -408,17 +407,17 @@ body.darkmode {
 @media screen and (max-width: 992px){
 
 
-  .contenedor .panel-der form{
+  .contenedor .panel-izq form{
     padding: 30px;
   }
 
-  .contenedor .panel-izq #imagenlogo{
+  .contenedor .panel-der #imagenlogo{
     background-size: 120px;
     width: 120px;
     height: 120px;
   }
 
-  .darkmode .contenedor .panel-izq #imagenlogo{
+  .darkmode .contenedor .panel-der #imagenlogo{
     background-size: 90px;
     width: 120px;
     height: 120px;
@@ -435,16 +434,16 @@ body.darkmode {
     margin-top: 11px;
     text-align: center;
   }
-  .contenedor .panel-der h2 {
+  .contenedor .panel-izq h2 {
     font-size: 25px;
     margin-top: 15px;    
   }
-  .contenedor .panel-der form h2 {
+  .contenedor .panel-izq form h2 {
     font-size: 20px;
     margin-top: 30px;    
     margin-bottom: 10px;
   }
-  .contenedor .panel-der #sexo{
+  .contenedor .panel-izq #sexo{
     width: auto;
   }
 }
@@ -459,7 +458,7 @@ body.darkmode {
     align-items: flex-start;
     height: 100vh;
   }
-  .contenedor .panel-der{
+  .contenedor .panel-izq{
     
   }
   .contenedor{
@@ -487,52 +486,52 @@ body.darkmode {
     margin-top: 0;
   }
 
-  .contenedor .panel-izq {
+  .contenedor .panel-der {
     display: none;
     width: 0%;
   }
-  .contenedor .panel-der {
+  .contenedor .panel-izq {
     padding: 50px 0px 0px 0;
     height: 100%;
     position: relative;
     width:100%;
   }
 
-  .contenedor .panel-der form{
+  .contenedor .panel-izq form{
     padding: 0px 20px 20px 20px;
   }
-  .contenedor .panel-der form .recordar {
+  .contenedor .panel-izq form .recordar {
     margin-top: 0;
   }
-  .contenedor .panel-der form p{
+  .contenedor .panel-izq form p{
     margin-top: 0;
   }
-  .contenedor .panel-der form label{
+  .contenedor .panel-izq form label{
     font-size: 16px;
   }
-  .contenedor .panel-der form input[type="submit"]{
+  .contenedor .panel-izq form input[type="submit"]{
     font-size: 20px;
   }
-  .contenedor .panel-der form p{
+  .contenedor .panel-izq form p{
     font-size: 16px;
   }
-  .contenedor .panel-der form h1{
+  .contenedor .panel-izq form h1{
     font-size: 30px;
   }
-  .contenedor .panel-der{
+  .contenedor .panel-izq{
     padding: 10px 0 0 0;
   }
-  .contenedor .panel-der .cajatexto {
+  .contenedor .panel-izq .cajatexto {
     font-size: 16px;
   }
   .control.has-icons-left .input.is-medium ~ .icon, .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon, .control.has-icons-right .select.is-medium ~ .icon{
     font-size:16px;
   }
-  .contenedor .panel-der h2 {
+  .contenedor .panel-izq h2 {
     font-size: 25px;
     margin-top: 15px;    
   }
-  .contenedor .panel-der form h2 {
+  .contenedor .panel-izq form h2 {
     font-size: 20px;
     margin-top: 30px;    
     margin-bottom: 10px;
