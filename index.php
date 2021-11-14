@@ -1,4 +1,8 @@
-<?php include("modelo/Conexion.php") ?>
+<?php include("Conexion.php") ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -39,7 +43,7 @@
             </div>
             <div class="contenedor__panelder" id="panelder">    
                 <button id="bdark"></button>  
-                <form action="" method="post" class="formulario" name="form">
+                <form action="controlador/LoginController.php" method="post" class="formulario" name="form">
                     <div class="formulario__grupo" id="grupo__header">
                         <h2 class="formulario__titulo" id="formulario-titulo">Sistema de gestión académica <p>Egatur</p></h2>
                         <h2 class="formulario__bienvenido" id="formulario-bienvenido">Bienvenido</h2>
