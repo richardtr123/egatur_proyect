@@ -1,6 +1,5 @@
 <?php
 
-use Usuario as GlobalUsuario;
 
 class BD
 {
