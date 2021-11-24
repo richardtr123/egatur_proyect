@@ -1,3 +1,6 @@
+
+
+
 modelo MVC modelo vista controlador
 
 DOM : el navegador de google ... 
@@ -28,3 +31,4 @@ MODELO CONEXION:
 consultar_notas->conectarme con la base de datos
 iniciar sesion -> conectarme con la base de datos
 eliminar un usuario -> conectarme a la base de datos
+

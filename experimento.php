@@ -20,7 +20,7 @@ class BD
                                     host=".self::$servidor.";
                                     port=".self::$puerto."; 
                                     charset=".self::$charset."", self::$username, self::$password, self::$atributos); 
-            echo "conexion realidad";
+            
         return self::$instancia;
         }
     }
@@ -58,7 +58,10 @@ class Usuario
 
 // $valor=BD::crearInstancia();
 $valor2=new Usuario;
-$valor2->Loguearse('richardtr123','Wilson_123');
+$datos=$valor2->Loguearse('richardtr123','Wilson_123');
+
+
+
 
 
 
